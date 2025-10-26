@@ -2,127 +2,65 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta name="google-site-verification" content="1HABgwXd5sQ21buL6mIgipNgnBAgEWYkZnVg5Td7uxg" />  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>saadweb-7</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-   <style>
-.logo {
-  box-shadow: 0 0 20px #ff00ff55;
-  transform: scale(1);
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Neon glow on hover */
-.logo:hover {
-  box-shadow: 0 0 40px #ff00ff, 0 0 80px #ff33ff, 0 0 100px #ff66ff;
-  border-color: #ff33ff;
-  transform: scale(1.05);
-  transition: all 0.6s ease-in-out;
-}
+  <!-- 🌟 SEO Improvements -->
+  <title>Saad Jalal | Portfolio | Web Developer & Computer Science Student</title>
+  <meta name="description" content="Welcome to Saad Jalal’s personal portfolio. I’m a Computer Science student and web developer showcasing creative web design, projects, and coding work.">
+  <meta name="keywords" content="Saad Jalal, saadweb, saadweb-7, portfolio, web developer, computer science, github pages, HTML CSS JavaScript projects">
 
-/* Optional: glow the name when hovered */
-.logo:hover + .glow-name {
-  text-shadow: 0 0 25px #ff00ff, 0 0 40px #ff33ff;
-  color: #ff66ff;
-  transition: all 0.5s ease-in-out;
-}  
-/* --- Animated About Me title --- */
-@keyframes neonGlow {
-  0% {
-    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff;
-  }
-  50% {
-    text-shadow: 0 0 20px #ff00ff, 0 0 40px #00d4ff, 0 0 60px #ff33ff;
-  }
-  100% {
-    text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff;
-  }
-}
+  <script src="https://cdn.tailwindcss.com"></script>
 
-.animated-about {
-  animation: neonGlow 3s infinite ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-</style>
-   <style>
+  <style>
+    .logo {
+      box-shadow: 0 0 20px #ff00ff55;
+      transform: scale(1);
+    }
+    .logo:hover {
+      box-shadow: 0 0 40px #ff00ff, 0 0 80px #ff33ff, 0 0 100px #ff66ff;
+      border-color: #ff33ff;
+      transform: scale(1.05);
+      transition: all 0.6s ease-in-out;
+    }
+    .logo:hover + .glow-name {
+      text-shadow: 0 0 25px #ff00ff, 0 0 40px #ff33ff;
+      color: #ff66ff;
+      transition: all 0.5s ease-in-out;
+    }  
+    @keyframes neonGlow {
+      0% { text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff; }
+      50% { text-shadow: 0 0 20px #ff00ff, 0 0 40px #00d4ff, 0 0 60px #ff33ff; }
+      100% { text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff; }
+    }
+    .animated-about {
+      animation: neonGlow 3s infinite ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
 
-        body {
-            box-sizing: border-box;
-        }
-        
-        .neon-pink {
-            text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080;
-        }
-        
-        .neon-blue {
-            text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff, 0 0 20px #00d4ff;
-        }
-        
-        .glow-pink {
-            box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
-        }
-        
-        .glow-blue {
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(255, 0, 128, 0.2);
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        .skill-bar {
-            background: linear-gradient(90deg, #ff0080, #00d4ff);
-            height: 8px;
-            border-radius: 4px;
-            transition: width 2s ease-in-out;
-        }
-        /* --- Animated glowing circle hover --- */
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 25px #ff33ff44, 0 0 50px #ff33ff22;
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 0 60px #ff33ff, 0 0 120px #ff66ff;
-    transform: scale(1.1);
-  }
-  100% {
-    box-shadow: 0 0 25px #ff33ff44, 0 0 50px #ff33ff22;
-    transform: scale(1);
-  }
-}
-
-.animated-circle {
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-/* Hover effect */
-.animated-circle:hover {
-  animation: glowPulse 1.5s infinite ease-in-out;
-  background-color: rgba(255, 0, 255, 0.15);
-}
-
-    </style>
+  <style>
+    body { box-sizing: border-box; }
+    .neon-pink { text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080; }
+    .neon-blue { text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff, 0 0 20px #00d4ff; }
+    .glow-pink { box-shadow: 0 0 20px rgba(255, 0, 128, 0.5); }
+    .glow-blue { box-shadow: 0 0 20px rgba(0, 212, 255, 0.5); }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(255, 0, 128, 0.2); }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+    .floating { animation: float 6s ease-in-out infinite; }
+    .skill-bar { background: linear-gradient(90deg, #ff0080, #00d4ff); height: 8px; border-radius: 4px; transition: width 2s ease-in-out; }
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 25px #ff33ff44, 0 0 50px #ff33ff22; transform: scale(1); }
+      50% { box-shadow: 0 0 60px #ff33ff, 0 0 120px #ff66ff; transform: scale(1.1); }
+      100% { box-shadow: 0 0 25px #ff33ff44, 0 0 50px #ff33ff22; transform: scale(1); }
+    }
+    .animated-circle { transition: all 0.5s ease-in-out; cursor: pointer; }
+    .animated-circle:hover { animation: glowPulse 1.5s infinite ease-in-out; background-color: rgba(255, 0, 255, 0.15); }
+  </style>
 </head>
+
 <body class="bg-slate-900 text-white font-sans">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur-sm z-50 border-b border-pink-500/20">
@@ -617,5 +555,6 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'994026a417a9d56b',t:'MTc2MTM3ODkxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
